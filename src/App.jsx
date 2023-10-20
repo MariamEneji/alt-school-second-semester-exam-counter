@@ -1,8 +1,6 @@
 import React from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
-import './App.css'
+
 import Counter from './Counter'
 import PageNotFound from './Errors/PageNotFound'
 import { BrowserRouter,Routes, Route} from 'react-router-dom'
@@ -26,10 +24,11 @@ function App() {
     } />
     
     
-    <Route path='/*' element={<PageNotFound/>} />
+    <Route path='*' element={<PageNotFound/>} />
  
   </Routes>
   </BrowserRouter>
+  
   
   )
 }
