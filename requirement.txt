@@ -1,0 +1,10 @@
+This is a counter app that utilizes a custom hook (useCounter) with increment, decrement, reset and setValue functions.
+
+A 404 page was built in the event that the browser cannot find a page.
+
+Error boundary have also been implemented in the event that the app develops a bug.
+
+Libraries used
+
+React - Vite
+Tailwind CSS
