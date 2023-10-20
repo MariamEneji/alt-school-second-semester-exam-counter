@@ -1,4 +1,4 @@
-import React from 'react'
+
 import useCounter from './hooks/useCounter'
 import {BiReset} from 'react-icons/bi'
 const Counter = () => {
@@ -22,7 +22,7 @@ const [counter, increment, decrement, reset, setValue, inputRef] = useCounter(0)
 
 
 
-            <input className='p-2 rounded-l-xl shadow-xl' ref={inputRef}  type="text" placeholder='Set a value'  />
+            <input className='p-2 rounded-l-xl shadow-xl' ref={inputRef}  type="number" placeholder='Set a value'  />
 
             <button className='border p-2 shadow-xl bg-purple-400 text-white px-3 rounded-r-xl' onClick={setValue}>Set</button>
         </div>
