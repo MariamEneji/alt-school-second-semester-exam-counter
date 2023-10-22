@@ -20,7 +20,7 @@ const reset = () => {
 
 const setValue = (e) => {
     e.preventDefault()
-    setNumber(inputRef.current.value );
+    setNumber(Number(inputRef.current.value) );
     inputRef.current.value = ''
 }
 
