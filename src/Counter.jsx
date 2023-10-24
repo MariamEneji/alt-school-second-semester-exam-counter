@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import useCounter from './hooks/useCounter'
 import {BiReset} from 'react-icons/bi'
 const Counter = () => {
@@ -6,7 +7,13 @@ const Counter = () => {
 const [counter, increment, decrement, reset, setValue, inputRef] = useCounter(0)
 
   return (
-    <div  className='h-screen bg-purple-200 flex justify-center items-center flex-col p-10'>
+    <div  className='h-screen bg-purple-200 flex  justify-center items-center flex-col p-10'>
+
+      <div className='flex gap-8 text-white justify-between items-center'>
+        <Link to='*' className='bg-purple-400 px-4 py-2 hover:bg-purple-200 border border-purple-400 hover:text-purple-400 '>Not Found</Link>
+        <Link to='/bug' className='bg-purple-400 px-4 py-2 hover:bg-purple-200 border border-purple-400 hover:text-purple-400 '>Got a bug</Link>
+
+      </div>
 
 <h2 className='text-[10rem] text-white font-bold p-10'>{counter}</h2>
 

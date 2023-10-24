@@ -22,6 +22,8 @@ function App() {
       </ErrorBoundary>
     
     } />
+
+    <Route path='/bug' element={<CounterError/>}/>
     
     
     <Route path='*' element={<PageNotFound/>} />
